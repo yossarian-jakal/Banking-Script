@@ -1,10 +1,11 @@
+#install.package("dplyr")
+
 library(dplyr)
 
+#Set up file location here 
+#setwd()
 
-
-setwd("/home/jack/Documents/Life/ASB exports")
-
-spend <- read.csv('Export20240825181759.csv', skip = 6, header = TRUE)
+spend <- read.csv('filename.csv', skip = 6, header = TRUE)
 spend<- as.data.frame(spend)
 
 spend$Date <- as.Date(spend$Date)
